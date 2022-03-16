@@ -14,7 +14,9 @@ const Profile = () => {
             <Button
                 title="화면이동"
                 color="red"
-                onPress={() => navigation.navigate("ProfileDetail") }
+                onPress={() => navigation.push("ProfileDetail", {
+                    userId : "12345",
+                }) }
             />
 
 
